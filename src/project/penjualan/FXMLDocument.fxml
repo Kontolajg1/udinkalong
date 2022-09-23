@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="483.0" prefWidth="674.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.penjualan.FXMLDocumentController">
+   <children>
+      <MenuBar layoutY="-1.0" prefHeight="28.0" prefWidth="684.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Data">
+            <items>
+              <MenuItem fx:id="displaycust" mnemonicParsing="false" onAction="#displaycustklik" text="Customer" />
+                  <MenuItem fx:id="displaybarang" mnemonicParsing="false" onAction="#displaybarang" text="barang" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Input">
+               <items>
+                  <MenuItem fx:id="inputcust" mnemonicParsing="false" onAction="#inputcustclick" text="Customer" />
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Transaksi">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Penjualan" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ImageView fitHeight="456.0" fitWidth="725.0" layoutX="-14.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

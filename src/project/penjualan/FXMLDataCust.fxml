@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="495.0" prefWidth="422.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.penjualan.FXMLDataCustController">
+   <children>
+      <Label layoutX="26.0" layoutY="27.0" text="Data Customer">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tbvcust" layoutX="26.0" layoutY="67.0" prefHeight="200.0" prefWidth="332.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Button fx:id="awaltombol" layoutX="26.0" layoutY="278.0" mnemonicParsing="false" onAction="#awalpencet" prefHeight="36.0" prefWidth="64.0" text="awal" />
+      <Button fx:id="sebelumtombol" layoutX="78.0" layoutY="338.0" mnemonicParsing="false" onAction="#sebelumpencet" text="sebelum" />
+      <Button fx:id="sesudahtombol" layoutX="139.0" layoutY="284.0" mnemonicParsing="false" onAction="#sesudahpencet" text="sesudah" />
+      <Button fx:id="akhirtombol" layoutX="199.0" layoutY="338.0" mnemonicParsing="false" onAction="#akhirpencet" text="akhir" />
+      <Button fx:id="tambahtombol" layoutX="293.0" layoutY="41.0" mnemonicParsing="false" onAction="#tambahpencet" text="tambah" />
+      <Button fx:id="hapustombol" layoutX="245.0" layoutY="284.0" mnemonicParsing="false" onAction="#hapuspencet" text="hapus" />
+      <Button fx:id="ubahtombol" layoutX="370.0" layoutY="155.0" mnemonicParsing="false" onAction="#ubahpencet" text="ubah" />
+      <Button fx:id="keluartombol" layoutX="272.0" layoutY="338.0" mnemonicParsing="false" onAction="#keluarpencet" text="keluar" />
+      <Label layoutX="26.0" layoutY="378.0" text="Search" />
+      <TextField fx:id="searchcust" layoutX="65.0" layoutY="374.0" onKeyReleased="#mencaridata" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller=".FXMLinputnilaiControllerController">
+   <children>
+      <Label layoutX="138.0" layoutY="35.0" text="Input/Update data barang">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="96.0" text="Nama barang" />
+      <Label layoutX="81.0" layoutY="149.0" text="kodebarang" />
+      <Label layoutX="81.0" layoutY="183.0" text="tarif" />
+      <TextField fx:id="barang" layoutX="189.0" layoutY="92.0" />
+      <TextField fx:id="kode" layoutX="189.0" layoutY="145.0" />
+      <TextField fx:id="tarif" layoutX="189.0" layoutY="179.0" />
+      <Button fx:id="simpan" layoutX="87.0" layoutY="266.0" mnemonicParsing="false" onAction="#simpanpencet" text="simpan" />
+      <Button fx:id="batal" layoutX="189.0" layoutY="266.0" mnemonicParsing="false" onAction="#batalpencet" text="batal" />
+      <Button fx:id="keluar" layoutX="286.0" layoutY="266.0" mnemonicParsing="false" onAction="#keluarpencet" text="keluar" />
+   </children>
+</AnchorPane>

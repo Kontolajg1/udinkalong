@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="431.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="project.penjualan.FXMLInputCustControllerController">
+    <stylesheets>
+        <URL value="@fxmlinputcustcontroller.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="103.0" layoutY="65.0" text="IdMember" />
+      <Label layoutX="117.0" layoutY="109.0" text="Nama" />
+      <Label layoutX="104.0" layoutY="149.0" text="Alamat" />
+      <Label layoutX="117.0" layoutY="192.0" text="Total" />
+      <Label layoutX="89.0" layoutY="24.0" text="Tambah / Edit Data Customer">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textId" layoutX="180.0" layoutY="61.0" prefHeight="25.0" prefWidth="188.0" />
+      <TextField fx:id="textNama" layoutX="180.0" layoutY="105.0" prefHeight="25.0" prefWidth="188.0" />
+      <TextField fx:id="TextAlamat" layoutX="180.0" layoutY="145.0" prefHeight="25.0" prefWidth="188.0" />
+      <TextField fx:id="TextTotal" layoutX="180.0" layoutY="188.0" prefHeight="25.0" prefWidth="188.0" />
+      <Button fx:id="simpantombol" layoutX="142.0" layoutY="245.0" mnemonicParsing="false" onAction="#simpanpencet" text="Simpan" />
+      <Button fx:id="bataltombol" layoutX="225.0" layoutY="245.0" mnemonicParsing="false" onAction="#batalpencet" text="Batal" />
+      <Button fx:id="keluartombol" layoutX="300.0" layoutY="245.0" mnemonicParsing="false" onAction="#keluarpencet" text="Keluar" />
+   </children>
+</AnchorPane>

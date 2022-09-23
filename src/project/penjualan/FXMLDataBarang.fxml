@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="453.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.penjualan.FXMLDataBarangController">
+   <children>
+      <TableView fx:id="tbvbarang" layoutX="28.0" layoutY="78.0" prefHeight="200.0" prefWidth="332.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="C1" />
+            <TableColumn prefWidth="75.0" text="C2" />
+         </columns>
+      </TableView>
+      <TextField fx:id="searchbarang" layoutX="75.0" layoutY="384.0" onKeyReleased="#mencaridata" />
+      <Label layoutX="36.0" layoutY="388.0" text="Search" />
+      <Button fx:id="keluartombol" layoutX="282.0" layoutY="348.0" mnemonicParsing="false" onAction="#keluarpencet" text="keluar" />
+      <Button fx:id="ubahtombol" layoutX="380.0" layoutY="165.0" mnemonicParsing="false" onAction="#ubahpencet" text="ubah" />
+      <Button fx:id="hapustombol" layoutX="255.0" layoutY="294.0" mnemonicParsing="false" onAction="#hapuspencet" text="hapus" />
+      <Button fx:id="tambahtombol" layoutX="303.0" layoutY="51.0" mnemonicParsing="false" onAction="#tambahpencet" text="tambah" />
+      <Button fx:id="akhirtombol" layoutX="209.0" layoutY="348.0" mnemonicParsing="false" onAction="#akhirpencet" text="akhir" />
+      <Button fx:id="sesudahtombol" layoutX="149.0" layoutY="294.0" mnemonicParsing="false" onAction="#sesudahpencet" text="sesudah" />
+      <Button fx:id="sebelumtombol" layoutX="88.0" layoutY="348.0" mnemonicParsing="false" onAction="#sebelumpencet" text="sebelum" />
+      <Button fx:id="awaltombol" layoutX="36.0" layoutY="288.0" mnemonicParsing="false" onAction="#awalpencet" prefHeight="36.0" prefWidth="64.0" text="awal" />
+      <Label layoutX="36.0" layoutY="37.0" text="Data Customer">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
